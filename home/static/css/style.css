@@ -101,6 +101,9 @@ body{
     background: rgb(188, 123, 79);
     color: black;
 }
+.cohd{
+    color: rgb(188, 123, 79) !important;
+}
 .title::after{
     content: '';
     display: block;
@@ -338,5 +341,10 @@ body{
         outline: 2px solid rgb(188, 123, 79);
         padding: 20px;
         border-radius: 1rem;
+    }
+    .avat img{
+        border-radius: 100%;
+        width: 40px;
+        /* outline: 2px solid rgb(188, 123, 79); */
     }
 }

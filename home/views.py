@@ -191,7 +191,6 @@ def password_update(request):
 #userprofile done
 
 # cart
-@login_required(login_url='signin')
 def add_to_cart(request):
     if request.method == 'POST':
         quantity = int(request.POST['quantity'])
@@ -229,7 +228,6 @@ def add_to_cart(request):
             messages.success(request, format_html("one item added ... <a href='http://54.152.253.62/cart'>view cart</a>"))
             return redirect('home')
 
-@login_required(login_url='signin')
 def cart(request):
     cart = Cart.objects.filter(user__username = request.user.username, paid = False)
     for item in cart:
@@ -254,7 +252,6 @@ def cart(request):
 
     return render(request, 'cart.html', context)
 
-@login_required(login_url='signin')
 def increase(request):
     if request.method == 'POST':
         qty_item = request.POST['quant_id']
@@ -266,7 +263,6 @@ def increase(request):
         messages.success(request, 'quantity updated')
         return redirect('cart')
 
-@login_required(login_url='signin')
 def delete(request):
     if request.method == 'POST':
         del_item = request.POST['del_id']
