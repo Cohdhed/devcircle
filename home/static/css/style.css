@@ -322,6 +322,9 @@ body{
         outline: 2px solid rgb(188, 123, 79);
         height: 300px;
     }
+    .caroimg{
+        height: 70vh !important;
+    }
 }
 
 @media (max-width: 768px){
@@ -346,5 +349,8 @@ body{
         border-radius: 100%;
         width: 40px;
         /* outline: 2px solid rgb(188, 123, 79); */
+    }
+    .caroimg{
+        height: 50vh !important;
     }
 }
