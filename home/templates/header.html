@@ -16,9 +16,9 @@
                       <img src="{{user.customer.pix.url}}" alt="{{user.customer.username}}"></a>
                     {% endif %}
                   </li>  
-                <li class="list-inline-item">
+                <li class="list-inline-item cohd">
                   {% if request.user %}
-                    <span class="cohd">Welcome {{user.username}}!</span></li>
+                    <span>Welcome {{user.username}}!</span></li>
                   {% endif %}
                 <li class="list-inline-item"><a href="{% url 'profile' %}"><span>Profile</span></a></li>
                 <li class="list-inline-item"><a href="{% url 'cart' %}"><span><i class="bi bi-cart4"></i>Cart</span></a></li>

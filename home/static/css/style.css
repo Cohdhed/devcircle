@@ -348,9 +348,13 @@ body{
     .avat img{
         border-radius: 100%;
         width: 40px;
-        /* outline: 2px solid rgb(188, 123, 79); */
+        outline: none !important;
     }
     .caroimg{
-        height: 50vh !important;
+        height: 60vh !important;
+    }
+    .carouicon i{
+        font-size: 3.5vh;
+        color: black;
     }
 }
